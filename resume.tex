@@ -59,6 +59,14 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingFullSubtitle}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{p{0.72\textwidth}@{\extracolsep{\fill}}r}
+      \hspace{-10pt} \textbf{#1} & #2 \\
+      \multicolumn{2}{l}{\textit{\small#3}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -88,12 +96,12 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science - Specialization in Machine Learning; GPA: \textnormal{3.9}}{Aug. 2018 -- Dec. 2021}
+      {Master of Science in Computer Science - Specialization in Machine Learning; GPA: \textnormal{3.9}}{Aug 2018 -- Dec 2021}
       \resumeSubSubheading
       {Relevant coursework: Machine Learning, Reinforcement Learning, Deep Learning}{}
     \resumeSubheading
       {University of Maryland, College Park}{College Park, MD}
-      {Bachelor of Science in Computer Science}{Aug 2012 -- May. 2016}
+      {Bachelor of Science in Computer Science}{Aug 2012 -- May 2016}
 
   \resumeSubHeadingListEnd
 
@@ -103,7 +111,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Etsy}{June 2024 -- Present}
+      {Etsy}{Jun 2024 -- Present}
       {Senior Machine Learning Engineer, Ads Search Quality (Ranking \& Retrieval)}{Jan 2025 -- Present}
 
       \resumeItemListStart
@@ -118,28 +126,28 @@
         \resumeItem{Retrieval Candidate Blending}
           {Redesigned retrieval blending from greedy to round-robin and doubled candidates sent to the second-pass ranker, resulting in \textbf{+\$4.21M} annualized GMS, \textbf{+0.61\%} Ads CVR, and \textbf{+0.26\%} sitewide CVR.}
         \resumeItem{Semantic Relevance Filtering}
-          {Added a semantic relevance filter in the retrieval layer to suppress low-relevance ad listings. Achieved \textbf{+\$4.98M} sitewide GMS with neutral Ads GMS impact; reduced first-page ad irrelevance from $\sim$7\% to \textbf{<5\%} as measured by an LLM teacher model, meeting the team's product quality goal.}
+          {Added a semantic relevance filter in the retrieval layer to suppress low-relevance ad listings. Achieved \textbf{+\$4.98M} sitewide GMS with neutral Ads GMS impact; reduced first-page ad irrelevance from $\sim$7\% to \textbf{$<$5\%} as measured by an LLM teacher model, meeting the team's product quality goal.}
         \resumeItem{Solr Minimum Match Strictness}
           {Tightened Solr minimum keyword match to 100\% for short queries ($\leq$3 terms), up from $\sim$60\%. Despite reducing ads click revenue, the relevance improvement drove \textbf{+1.33\% Ads GMS}, \textbf{+1.55\% Ads CVR}, and \textbf{+\$1.9M} sitewide GMS.}
       \resumeItemListEnd
 
 
     \resumeSubSubheading
-      {Machine Learning Engineer, Contractor}{June 2024 -- Dec 2024}
+      {Machine Learning Engineer, Contractor}{Jun 2024 -- Dec 2024}
     \vspace{5pt}
 
-    \resumeSubheading
-      {Sabbatical}{April 2022 -- May 2024}
-      {Completed a thru-hike of the 2,194.3-mile Appalachian Trail; pursued independent study and personal projects.}{}
+    \resumeSubheadingFullSubtitle
+      {Sabbatical}{Apr 2022 -- May 2024}
+      {Completed a thru-hike of the 2,194.3-mile Appalachian Trail; pursued independent study and personal projects.}
 
     \vspace{5pt}
     \resumeSubheading
-      {Capital One}{July 2016 -- March 2022}
+      {Capital One}{Jul 2016 -- Mar 2022}
       {Senior Machine Learning Engineer}{Feb 2019 -- Mar 2022}
 
       \resumeItemListStart
         \resumeItem{Fraud Detection Models}
-          {Developed and productionized multiple ML models for credit card fraud detection, including a graph-based ring fraud algorithm ($\sim$\$10M/yr incremental savings), a third-party account takeover model (>\$15M/yr in savings), and a risky merchant classifier (\$5--10M/yr estimated savings).}
+          {Developed and productionized multiple ML models for credit card fraud detection, including a graph-based ring fraud algorithm ($\sim$\$10M/yr incremental savings), a third-party account takeover model ($>$\$15M/yr in savings), and a risky merchant classifier (\$5--10M/yr estimated savings).}
       \resumeItemListEnd
 
     \resumeSubSubheading
@@ -151,7 +159,7 @@
       \resumeItemListEnd
 
     \resumeSubSubheading
-      {Associate Software Engineer}{July 2016 -- Feb 2018}
+      {Associate Software Engineer}{Jul 2016 -- Feb 2018}
 
       \resumeItemListStart
         \resumeItem{AWS Network Debugger}
@@ -165,9 +173,9 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Software/Infrastructure}{: Python, Ray, AWS, Docker, Airflow, git, Scala}
+     \textbf{Software/Infrastructure}{: Python, Ray, AWS, GCP, Docker, Airflow, git, Scala}
      \hfill \\
-     \textbf{ML/Data}{: PyTorch, pyspark, SQL, pandas, numpy, scikit-learn, Databricks, Snowflake}
+     \textbf{ML/Data}{: PyTorch, pyspark, SQL, pandas, numpy, scikit-learn, Databricks, Snowflake, BigQuery}
    }
  \resumeSubHeadingListEnd
 
